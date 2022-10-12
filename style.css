@@ -1,0 +1,46 @@
+.visually-hidden {
+position: absolute;
+
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+
+-webkit-clip-path: inset(100%);
+        clip-path: inset(100%);
+
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.weather__table {
+width: 100%;
+display: table;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+.table-head__item, .table-body__item {
+border-bottom: 1px solid #000000;
+}
+
+.table-head__element, .table-body__element {
+padding: 15px 5px;
+display: table-cell;
+text-align: left;
+vertical-align: middle;
+border-radius: 2px;
+}
