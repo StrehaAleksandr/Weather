@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .visually-hidden {
 position: absolute;
 
@@ -24,31 +29,36 @@ a {
     text-decoration: none;
 }
 
-.container {
-    display: flex;
-}
+/* header */
 
 .main-navigation {
-    background-color: #000000;
-    min-height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    min-height: 100px;
 }
 
 .main-navigation__logo {
-    color: #ffffff;
-    margin-top: 20px;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    margin-left: 150px;
 }
 
-.main-navigation__navigation {
+.main-navigation__list {
     list-style: none;
+    display: flex;
     margin: 0 auto;
-    margin-top: 20px;
 }
 
-.main-navigation__navigation a {
-    color: #ffffff;
+.main-navigation__item {
+    margin-right: 20px;
+    background-color: blueviolet;
 }
 
-.weather__table {
+/* main */
+
+/* .weather__table {
 width: 100%;
 display: table;
 border-collapse: collapse;
@@ -65,4 +75,4 @@ display: table-cell;
 text-align: left;
 vertical-align: middle;
 border-radius: 2px;
-}
+} */
