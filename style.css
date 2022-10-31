@@ -58,7 +58,7 @@ a {
 
 /* main */
 
-/* .weather__table {
+.weather__table {
 width: 100%;
 display: table;
 border-collapse: collapse;
@@ -75,4 +75,4 @@ display: table-cell;
 text-align: left;
 vertical-align: middle;
 border-radius: 2px;
-} */
+} 
