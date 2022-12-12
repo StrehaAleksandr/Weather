@@ -8,10 +8,10 @@
     <body>
         <header class="main-header">
             <nav class="main-header__navigation main-navigation">
-                <a class="main-navigation__logo" href="#">logo</a>
+                <a class="main-navigation__logo" href="#">Weather Calendar</a>
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item">
-                        <a href="#">Главная</a>
+                        <a href="#" class="main-navigation__item--active">Главная</a>
                     </li>
                     <li class="main-navigation__item">
                         <a href="list.html">Весь календарь</a>
@@ -22,91 +22,94 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <section></section>
-            <section></section>
-            <section></section>
-            <template>
-                <table class="weather__table">
-                    <thead class="weather-table__head">
-                        <tr class="table-head__item">
-                            <th class="table-head__element">День</th>
-                            <th class="table-head__element">Погода</th>
-                            <th class="table-head__element">Скорость ветра</th>
-                            <th class="table-head__element">Влажность</th>
-                        </tr>
-                    </thead>
-        
-                    <tbody class="weather-table__body">
-                        <tr class="table-body__item">
-                            <td class="table-body__element">Понедельник</td>
-                            <td class="table-body__element">Солнечная</td>
-                            <td class="table-body__element">2 м/с</td>
-                            <td class="table-body__element">30%</td>
-                            <td class="table-body__element">
-                                <a href="edit.html">Редактировать</a>
-                            </td>
-                        </tr>
-                        <tr class="table-body__item">
-                            <td class="table-body__element">Вторник</td>
-                            <td class="table-body__element">Солнечная</td>
-                            <td class="table-body__element">2 м/с</td>
-                            <td class="table-body__element">30%</td>
-                            <td class="table-body__element">
-                                <a href="edit.html">Редактировать</a>
-                            </td>
-                        </tr>
-                        <tr class="table-body__item">
-                            <td class="table-body__element">Среда</td>
-                            <td class="table-body__element">Солнечная</td>
-                            <td class="table-body__element">2 м/с</td>
-                            <td class="table-body__element">30%</td>
-                            <td class="table-body__element">
-                                <a href="edit.html">Редактировать</a>
-                            </td>
-                        </tr>
-                        <tr class="table-body__item">
-                            <td class="table-body__element">Четверг</td>
-                            <td class="table-body__element">Солнечная</td>
-                            <td class="table-body__element">2 м/с</td>
-                            <td class="table-body__element">30%</td>
-                            <td class="table-body__element">
-                                <a href="edit.html">Редактировать</a>
-                            </td>
-                        </tr>
-                        <tr class="table-body__item">
-                            <td class="table-body__element">Пятница</td>
-                            <td class="table-body__element">Солнечная</td>
-                            <td class="table-body__element">2 м/с</td>
-                            <td class="table-body__element">30%</td>
-                            <td class="table-body__element">
-                                <a href="edit.html">Редактировать</a>
-                            </td>
-                        </tr>
-                        <tr class="table-body__item">
-                            <td class="table-body__element">Суббота</td>
-                            <td class="table-body__element">Солнечная</td>
-                            <td class="table-body__element">2 м/с</td>
-                            <td class="table-body__element">30%</td>
-                            <td class="table-body__element">
-                                <a href="edit.html">Редактировать</a>
-                            </td>
-                        </tr>
-                        <tr class="table-body__item">
-                            <td class="table-body__element">Воскресение</td>
-                            <td class="table-body__element">Солнечная</td>
-                            <td class="table-body__element">2 м/с</td>
-                            <td class="table-body__element">30%</td>
-                            <td class="table-body__element">
-                                <a href="edit.html">Редактировать</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </template>
+        <main class="weather">
+            <section class="weather-on-week">
+                <h2 class="weather-on-week__title">Погода на неделю</h1>
+                    <table class="weather__table">
+                        <thead class="weather-table__head">
+                            <tr class="table-head__item">
+                                <th class="table-head__element">Дата</th>
+                                <th class="table-head__element">Страна</th>
+                                <th class="table-head__element">Город</th>
+                                <th class="table-head__element">Температура(С)</th>
+                                <th class="table-head__element">Погода</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody class="weather-table__body">
+                            <tr class="table-body__item">
+                                <td class="table-body__element">01.10.2022</td>
+                                <td class="table-body__element">США</td>
+                                <td class="table-body__element">Нью-Йорк</td>
+                                <td class="table-body__element">20</td>
+                                <td class="table-body__element">Солнечная</td>
+                                <td class="table-body__element">
+                                    <a href="edit.html">Редактировать</a>
+                                </td>
+                            </tr>
+                            <tr class="table-body__item">
+                                <td class="table-body__element">02.10.2022</td>
+                                <td class="table-body__element">США</td>
+                                <td class="table-body__element">Нью-Йорк</td>
+                                <td class="table-body__element">20</td>
+                                <td class="table-body__element">Солнечная</td>
+                                <td class="table-body__element">
+                                    <a href="edit.html">Редактировать</a>
+                                </td>
+                            </tr>
+                            <tr class="table-body__item">
+                                <td class="table-body__element">03.10.2022</td>
+                                <td class="table-body__element">США</td>
+                                <td class="table-body__element">Нью-Йорк</td>
+                                <td class="table-body__element">20</td>
+                                <td class="table-body__element">Солнечная</td>
+                                <td class="table-body__element">
+                                    <a href="edit.html">Редактировать</a>
+                                </td>
+                            </tr>
+                            <tr class="table-body__item">
+                                <td class="table-body__element">04.10.2022</td>
+                                <td class="table-body__element">США</td>
+                                <td class="table-body__element">Нью-Йорк</td>
+                                <td class="table-body__element">20</td>
+                                <td class="table-body__element">Солнечная</td>
+                                <td class="table-body__element">
+                                    <a href="edit.html">Редактировать</a>
+                                </td>
+                            </tr>
+                            <tr class="table-body__item">
+                                <td class="table-body__element">05.10.2022</td>
+                                <td class="table-body__element">США</td>
+                                <td class="table-body__element">Нью-Йорк</td>
+                                <td class="table-body__element">20</td>
+                                <td class="table-body__element">Солнечная</td>
+                                <td class="table-body__element">
+                                    <a href="edit.html">Редактировать</a>
+                                </td>
+                            </tr>
+                            <tr class="table-body__item">
+                                <td class="table-body__element">06.10.2022</td>
+                                <td class="table-body__element">США</td>
+                                <td class="table-body__element">Нью-Йорк</td>
+                                <td class="table-body__element">20</td>
+                                <td class="table-body__element">Солнечная</td>
+                                <td class="table-body__element">
+                                    <a href="edit.html">Редактировать</a>
+                                </td>
+                            </tr>
+                            <tr class="table-body__item">
+                                <td class="table-body__element">07.10.2022</td>
+                                <td class="table-body__element">США</td>
+                                <td class="table-body__element">Нью-Йорк</td>
+                                <td class="table-body__element">20</td>
+                                <td class="table-body__element">Солнечная</td>
+                                <td class="table-body__element">
+                                    <a href="edit.html">Редактировать</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
         </main>
-        <footer>
-            <section></section>
-        </footer>
     </body>
 </html>

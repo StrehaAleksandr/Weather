@@ -10,12 +10,14 @@ Compiled and minified CSS
 <head>
     <title class="main-title visually-hidden">Weather Calendar</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
         <nav class="main-header__navigation main-navigation">
-            <a class="main-navigation__logo" href="index.html">logo</a>
+            <a class="main-navigation__logo" href="index.html">Weather Calendar</a>
             <ul class="main-navigation__list">
                 <li class="main-navigation__item">
                     <a href="index.html">Главная</a>
@@ -24,7 +26,7 @@ Compiled and minified CSS
                     <a href="list.html">Весь календарь</a>
                 </li>
                 <li class="main-navigation__item">
-                    <a href="#">Редактировать календарь</a>
+                    <a href="#" class="main-navigation__item--active">Редактировать календарь</a>
                 </li>
             </ul>
         </nav>
@@ -33,35 +35,35 @@ Compiled and minified CSS
 
 <div class="section no-pad-bot" id="index-banner">
 	<div class="container">
-		<h1>Edit item</h1>
+		<h1>Редактирование календаря</h1>
 
 
 		<div class="row">
 			<form class="col s12">
 				<div class="row">
 					<div class="input-field col s6">
-						<input placeholder="Placeholder" id="first_name" type="text" class="validate"> <label for="first_name">First Name</label>
+						<input  id="date" type="text" class="validate"> <label for="date">Date</label>
 					</div>
 					<div class="input-field col s6">
-						<input id="last_name" type="text" class="validate"> <label for="last_name">Last Name</label>
+						<input id="country" type="text" class="validate"> <label for="country">Country</label>
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<input disabled value="I am not editable" id="disabled" type="text" class="validate"> <label for="disabled">Disabled</label>
+						<input id="city" type="text" class="validate"> <label for="city">City</label>
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<input id="password" type="password" class="validate"> <label for="password">Password</label>
+						<input id="tempreture" type="text" class="validate"> <label for="tempreture">Tempreture</label>
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<input id="email" type="email" class="validate"> <label for="email">Email</label>
+						<input id="weather" type="text" class="validate"> <label for="weather">Weather</label>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col s12">
 						This is an inline input field:
 						<div class="input-field inline">
@@ -69,7 +71,7 @@ Compiled and minified CSS
 								data-success="right">Helper text</span>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</form>
 		</div>
 		<div class="row">
